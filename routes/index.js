@@ -1,4 +1,5 @@
 import express from 'express';
+import apiRouter from './api/index.js';
 
 export function init(app)
 {
@@ -6,5 +7,5 @@ export function init(app)
     {
         res.end("Hello world!");
     });
-
+    app.use('/api', apiRouter);
 }
