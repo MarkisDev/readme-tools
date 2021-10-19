@@ -1,0 +1,29 @@
+{
+  "name": "readme-tools",
+  "version": "1.0.0",
+  "description": "A fun tool that you can use to make your readme more attractive!",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkisDev/readme-tools.git"
+  },
+  "keywords": [
+    "readme-tools",
+    "github",
+    "fun",
+    "github_readme"
+  ],
+  "author": "MarkisDev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarkisDev/readme-tools/issues"
+  },
+  "homepage": "https://github.com/MarkisDev/readme-tools#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.13"
+  }
+}
