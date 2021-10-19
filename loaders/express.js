@@ -1,4 +1,3 @@
-import 'express';
 
 export default async (app) =>
 {
