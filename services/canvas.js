@@ -2,8 +2,7 @@ import canva from "canvas";
 import fs from 'fs';
 export default class CanvasService
 {
-
-    async renderName()
+    async renderName(joke)
     {
         const canvas = canva.createCanvas(500, 200, "svg");
         const ctx = canvas.getContext('2d');
@@ -13,10 +12,8 @@ export default class CanvasService
         ctx.shadowOffsetY = 10;
         ctx.shadowBlur = 10;
         ctx.fillStyle = "rgb(255, 0, 0)";
-        ctx.fillText("TEST", 300, 100);
-
-
-        return canvas.toBuffer();
+        ctx.fillText(`${joke.setup}`, 500, 100);
+        ctx.fillText(`${joke.delivery}`, 500, 100)
+        return canvas.toBuffer();   
     }
-
 }
