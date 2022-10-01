@@ -1,0 +1,23 @@
+<!-- html file for setup/delivery jokes -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head', {variant: 'compact'}); %>
+</head>
+<body>
+    <main style="text-align: center">
+        <svg width="700" height="200">
+            <image x="0" y="0" href="https://thumbs.dreamstime.com/b/empty-old-paper-vintage-background-stained-beige-texture-96218148.jpg"/>
+            <foreignobject x="0" y="10" width="700" height="200">
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+                    div{text-align: middle; vertical-align: middle;}
+                    p{font-family: 'Sacramento';font-size: 2em;}
+                </style>
+                  <div style="width:90%;margin:auto;display:flex;justify-content: center;font-family: 'Sacramento', cursive;"><p style="margin:5px auto 0px;font-family:'Sacramento';"> <%= setup %> </p> </div>
+                  <div style="width:90%;margin:auto;display:flex;justify-content: center"><p style="margin:5px auto;"> - <%= delivery %> </p></div>   
+            </foreignobject>
+        </svg>  
+    </main>
+</body>
+</html>
